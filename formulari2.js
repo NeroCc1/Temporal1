@@ -2,11 +2,11 @@ function boton4() {
     window.alert('enviar4');
 }
 
-// definimos una variable la cual "apunta" a un elemento HTML identificado por su ID
+// Definimos una variable la cual "apunta" a un elemento HTML identificado por su ID
 var btnEnviar1 = document.getElementById('btnEnviar1');
 btnEnviar1.style.color = "yellow";
-// se agrega un listener (escucha) para cachar el evento click en el botón
-// la acción que ocurrirá al dar click la ejecutará una función anónima function() { }
+// Se agrega un listener (escucha) para cachar el evento click en el botón
+// La acción que ocurrirá al dar click la ejecutará una función anónima function() { }
 btnEnviar1.addEventListener('click', function () {
     window.alert('enviar1');
     cambiarColor("red");
