@@ -15,7 +15,7 @@
             "name": "Launch App",
             "request": "launch",
             "mainClass": "mx.uv.App",
-            "projectName": "ejemplo1"
+            "projectName": "MavenExample"
         }
     ]
 }
