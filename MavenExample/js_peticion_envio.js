@@ -1,4 +1,4 @@
-// uso del llamado get
+// uso del llamado GET
 var btnGet = document.getElementById("btnGet");
 btnGet.addEventListener("click", function () {
     var params = new URLSearchParams();
@@ -16,7 +16,8 @@ btnGet.addEventListener("click", function () {
             console.log(error);
         });
 });
-// uso del llamado post
+
+// uso del llamado POST
 var btnPost = document.getElementById("btnPost");
 btnPost.addEventListener("click", function () {
     var params = new URLSearchParams();
@@ -34,7 +35,8 @@ btnPost.addEventListener("click", function () {
             console.log(error);
         });
 });
-// uso del llamado get con parámetros en json
+
+// uso del llamado get con parámetros en JSON
 var btnGetJson = document.getElementById("btnGetJson");
 btnGetJson.addEventListener("click", function () {
     var params = new URLSearchParams();
@@ -48,7 +50,9 @@ btnGetJson.addEventListener("click", function () {
     console.log(params.get("nombre"))
     console.log("url?" + params)
     console.log("------")
-    // es un error enviar datos json con llamada get
+
+
+    // es un error enviar datos JSON con llamada GET
     console.log("{" + "name:'" + params.get("nombre") + "'," + "pass:'" + params.get("pass") + "'}");
     var params2 = "{" + "name:'" + params.get("nombre") + "'," + "pass:'" + params.get("pass") + "'}";
     axios.get("http://localhost:4567/holaJson?" + params)
@@ -60,7 +64,8 @@ btnGetJson.addEventListener("click", function () {
             console.log(error);
         });
 });
-// uso del llamado post con parámetros en json
+
+// uso del llamado POST con parámetros en JSON
 var btnPostJson = document.getElementById("btnPostJson");
 btnPostJson.addEventListener("click", function () {
     var params = new URLSearchParams();
